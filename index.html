@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ring 3D Viewer</title>
+
+  <!-- model-viewer library -->
+  <script type="module" 
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    model-viewer {
+      width: 100vw;
+      height: 100vh;
+      background-color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <model-viewer 
+    src="ring.glb"
+    alt="3D Ring Model"
+    auto-rotate
+    camera-controls
+    environment-image="neutral"
+    shadow-intensity="1">
+  </model-viewer>
+</body>
+</html>
